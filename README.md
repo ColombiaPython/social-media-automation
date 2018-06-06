@@ -20,7 +20,7 @@ $ (venv) pip install selenium
 git clone https://github.com/ColombiaPython/social-media-automation
 * Move to the social-media-automation
 $ (venv) cd social-media-automation
-* Download geckodriver and . Configure the script and enjoy!
+* Download geckodriver and . Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image and the link of facebook groups
 * Run the script
 $ (venv) python fbposter.py
