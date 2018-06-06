@@ -5,12 +5,12 @@ A Selenium Script to post an image with text on twitter.
 A Selenium Script to post an image with text linkedin.
 
 Facebook script
-1.Verify you have Python 3.6.x installed
-2.Install pip
+*Verify you have Python 3.6.x installed
+*Install pip
 https://bootstrap.pypa.io/get-pip.py
-3.Install python virtual environments 
+*Install python virtual environments 
 $ pip install virtualenv
-4.Create your virtual environment
+*Create your virtual environment
 $ virtualenv venv
 5.Activate your virtual environment
 $ source venv/bin/activate
