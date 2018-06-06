@@ -6,30 +6,30 @@
 
 Facebook script
 * Verify you have Python 3.6.x installed
-* Install pip
+* Install pip  
 https://bootstrap.pypa.io/get-pip.py
-* Install python virtual environments 
+* Install python virtual environments   
 $ pip install virtualenv
-* Create your virtual environment
+* Create your virtual environment  
 $ virtualenv venv
-* Activate your virtual environment
+* Activate your virtual environment  
 $ source venv/bin/activate
-* Install Python bindings for Selenium
+* Install Python bindings for Selenium  
 $ (venv) pip install selenium
-* Clone this repo
+* Clone this repo  
 git clone https://github.com/ColombiaPython/social-media-automation
-* Move to the social-media-automation
+* Move to the social-media-automation  
 $ (venv) cd social-media-automation
 * Download [geckodriver](https://github.com/mozilla/geckodriver/releases) and put in line 23 the path to this. Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image and the link of facebook groups
-* Run the script
+* Run the script  
 $ (venv) python fbposter.py
 
 Linkedin script
 * the same above steps until step 8
 * Download [geckodriver](https://github.com/mozilla/geckodriver/releases) and put in line 23 the path to this. Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image
-* Run the script
+* Run the script  
 $ (venv) python linkedinpost.py  
 **NOTE: The script still does not work for load images in groups even if it works to publish in the home or in a group without image**
 
@@ -37,5 +37,5 @@ Twitter script
 * the same above steps until step 8
 * Download put in line 23 the path to this and put in line 22 the path to this. Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image
-* Run the script
+* Run the script  
 $ (venv) python tweetpost.py
