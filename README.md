@@ -1,7 +1,7 @@
 **Selenium Scripts To Post In Facebook, Twitter And Linkedin**
 
-**A Selenium Script to post an image with text on the Facebook Groups you are member.**
-**A Selenium Script to post an image with text on twitter.**
+**A Selenium Script to post an image with text on the Facebook Groups you are member.**  
+**A Selenium Script to post an image with text on twitter.**  
 **A Selenium Script to post an image with text linkedin.**
 
 Facebook script
@@ -29,15 +29,15 @@ There is a main method in the script, you need to edit and provide your user and
 
 Linkedin script
 * the same above steps until step 8
-* Download geckodriver and put in line 23 the path to this. Configure the script and enjoy!
+* Download geckodriver and put in line 23 the path to this. Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image
 * Run the script
-$ (venv) python linkedinpost.py
+$ (venv) python linkedinpost.py  
 **NOTE: The script still does not work for load images in groups even if it works to publish in the home or in a group without image**
 
 Twitter script
 * the same above steps until step 8
-* Download geckodriver and put in line 22 the path to this. Configure the script and enjoy!
+* Download geckodriver and put in line 22 the path to this. Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image
 * Run the script
 $ (venv) python tweetpost.py
