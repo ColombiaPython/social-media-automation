@@ -1,8 +1,8 @@
 **Selenium Scripts To Post In Facebook, Twitter And Linkedin**
 
-*A Selenium Script to post an image with text on the Facebook Groups you are member.
-*A Selenium Script to post an image with text on twitter.
-*A Selenium Script to post an image with text linkedin.
+* A Selenium Script to post an image with text on the Facebook Groups you are member.
+* A Selenium Script to post an image with text on twitter.
+* A Selenium Script to post an image with text linkedin.
 
 Facebook script
 *Verify you have Python 3.6.x installed
