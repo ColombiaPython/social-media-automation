@@ -25,7 +25,7 @@ There is a main method in the script, you need to edit and provide your user and
 * Run the script  
 $ (venv) python fbposter.py
 
-###Linkedin script
+### Linkedin script
 * the same above steps until step 8
 * Download [geckodriver](https://github.com/mozilla/geckodriver/releases) and put in line 23 the path to this. Configure the script and enjoy!  
 There is a main method in the script, you need to edit and provide your user and password, the path to the image
