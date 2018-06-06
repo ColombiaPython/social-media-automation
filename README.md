@@ -1,4 +1,4 @@
-Selenium Scripts To Post In Facebook, Twitter And Linkedin
+**Selenium Scripts To Post In Facebook, Twitter And Linkedin**
 
 A Selenium Script to post an image with text on the Facebook Groups you are member.
 A Selenium Script to post an image with text on twitter.
