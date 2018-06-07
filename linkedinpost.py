@@ -11,8 +11,9 @@ def main():
 	title = ""
 	message = ""
 	image = ""
-	group_links = [	]
-
+	group_links = [ #"https://www.linkedin.com/groups/group_id"]
+	empresa_links = [ #"https://www.linkedin.com/company/company_id/admin/updates/"]
+	
 	# Delete cache
 	profile = webdriver.FirefoxProfile()
 	profile.set_preference("browser.cache.disk.enable", False)
@@ -37,15 +38,33 @@ def main():
 	if len(group_links) >= 1:
 		for group in group_links:
 			driver.get(group)
-			post_box=driver.find_element_by_xpath("//*[@name='title']")
-			post_box.send_keys(titulo)
+			post_box = driver.find_element_by_xpath("//*[@name='title']")
+			post_box.send_keys(title)
 			sleep(3)
+			body_message = driver.find_element_by_xpath("//*[@name='body']")
+			body_message.send_keys(message)
 			if image != "":
-				ima = driver.find_elements_by_class_name("js-action-upload")
+				ima = driver.find_elements_by_class_name("js-input-upload")
 				sleep(3)
 				ima[0].send_keys(image)
-				sleep(3)	
+			sleep(3)	
 			post_box = driver.find_element_by_class_name("action-submit")
+			sleep(3)
+			post_box.click()
+	elif len(empresa_links) >= 1:
+		for empresa in empresa_links:
+			driver.get(empresa)
+			post_box = driver.find_element_by_class_name("sharing-create-share-view__create-content")
+			post_box.click()
+			sleep(3)
+			mes = driver.find_element_by_class_name("mentions-texteditor__contenteditable")
+			mes.send_keys(message)
+			sleep(3)
+			if image != "":
+				ima = driver.find_elements_by_name("file")
+				ima[0].send_keys(image)
+				sleep(3)
+			post_box = driver.find_element_by_xpath("//*[@data-control-name='share.post']")
 			sleep(3)
 			post_box.click()
 	else:
@@ -55,9 +74,10 @@ def main():
 		mes = driver.find_element_by_class_name("mentions-texteditor__contenteditable")
 		mes.send_keys(message)
 		sleep(3)
-		ima = driver.find_elements_by_name("file")
-		ima[0].send_keys(image)
-		sleep(3)
+		if image != "":
+			ima = driver.find_elements_by_name("file")
+			ima[0].send_keys(image)
+			sleep(3)
 		post_box = driver.find_element_by_xpath("//*[@data-control-name='share.post']")
 		sleep(3)
 		post_box.click()
