@@ -2,7 +2,7 @@
 
 **A Selenium Script to post an image with text on the Facebook Groups you are member.**  
 **A Selenium Script to post an image with text on twitter.**  
-**A Selenium Script to post an image with text linkedin.**
+**A Selenium Script to post an image with text linkedin Groups you are member, companies you are admin or from your profile.**
 
 ### Facebook script
 * Verify you have Python 3.6.x installed
@@ -28,10 +28,10 @@ $ (venv) python fbposter.py
 ### Linkedin script
 * the same above steps until step 8
 * Download [geckodriver](https://github.com/mozilla/geckodriver/releases) and put in line 23 the path to this. Configure the script and enjoy!  
-There is a main method in the script, you need to edit and provide your user and password, the path to the image
+There is a main method in the script, you need to edit and provide your user and password, the path to the image or the link of the companie. If you want to publish from your profile do not put data of company or groups
 * Run the script  
 $ (venv) python linkedinpost.py  
-**NOTE: The script still does not work for load images in groups even if it works to publish in the home or in a group without image**
+
 
 ### Twitter script
 * the same above steps until step 8
